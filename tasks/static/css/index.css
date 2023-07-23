@@ -1,0 +1,75 @@
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;   
+    list-style: none;
+}
+.ejem{
+    font-size: 18px;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+body{
+    overflow-x: hidden; 
+    background: rgb(1, 18, 36) !important;
+    padding-bottom: 50px;
+}
+.servicios{
+    font-size: 20px;
+    color: #fff;
+}
+main{
+    border-top: 1px dotted rgba(102, 104, 105, 0.562);   
+}
+
+.content-service .content{
+    padding: 12px;    
+    background: rgba(1, 29, 59, 0.616);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 1px 1px 5px 0px rgba(4, 134, 240, 0.637);
+}
+
+.content-service div{
+    padding: 10px;
+}
+
+.serv{
+    background: url(../img/bg.jpg)center center fixed no-repeat;
+    background-size: cover;    
+}
+
+.nosotros{
+    background: rgba(1, 29, 59, 0.616);
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 0px rgba(4, 134, 240, 0.637);
+}
+
+
+.cart .cart-img img{
+    width: 100%;
+    height: 400px;
+}
+
+.cart-content .content{
+    padding: 12px;    
+    background: rgba(1, 29, 59, 0.616);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 1px 1px 5px 0px rgba(4, 134, 240, 0.637);
+}
+
+footer{
+    font-size: 16px;
+}
+.svg{width: 90px;}
+
+

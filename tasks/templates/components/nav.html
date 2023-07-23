@@ -1,0 +1,145 @@
+<div class="nav">
+  <div class="container">
+    <nav id="nav">
+      <div class="menu-icons">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </div>
+      <a href="" class="logo">
+        <svg
+          class="svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1531.5 710.11"
+        >
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #ff8c00;
+              }
+              .cls-2,
+              .cls-3 {
+                fill: #515151;
+              }
+              .cls-3 {
+                font-size: 330.28px;
+                font-weight: 800;
+                font-family: Arial-Black, Arial;
+                text-shadow: 1px 1px 1px white;
+              }
+              .cls-4 {
+                font-size: 168.56px;
+              }
+              .cls-4,
+              .cls-5 {
+                fill: #ff7606;
+                font-family: Arial-BoldMT, Arial;
+                font-weight: 700;
+                text-shadow: 1px 1px 0.5px white;
+              }
+              .cls-5 {
+                font-size: 160.94px;
+                letter-spacing: -0.07em;
+              }
+              .cls-6 {
+                letter-spacing: 0em;
+              }
+            </style>
+          </defs>
+          <title>Recurso 1</title>
+          <g id="Capa_2" data-name="Capa 2">
+            <g id="Capa_1-2" data-name="Capa 1">
+              <rect
+                class="cls-1"
+                x="10"
+                y="10"
+                width="1511.5"
+                height="690.11"
+              />
+              <path
+                class="cls-2"
+                d="M1511.5,20V690.11H20V20H1511.5m20-20H0V710.11H1531.5V0Z"
+              />
+              <rect
+                class="cls-2"
+                x="56.37"
+                y="395.32"
+                width="1420.22"
+                height="257.69"
+              />
+              <text
+                class="cls-3"
+                transform="translate(62.96 350.79) scale(1.33 1)"
+              >
+                CHIRI
+              </text>
+              <text
+                class="cls-4"
+                transform="translate(107.62 575.72) scale(1.52 1)"
+              >
+                Rock
+              </text>
+              <text
+                class="cls-5"
+                transform="translate(779.56 574.96) scale(1.61 1)"
+              >
+                T
+                <tspan class="cls-6" x="86.36" y="0">ools</tspan>
+              </text>
+            </g>
+          </g>
+        </svg>
+      </a>
+
+      {% comment %}
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          {% if user.is_authenticated %}
+          <li><a href="{% url 'tasks' %}">Tareas pendientes</a></li>
+          <li><a href="{% url 'task_completed' %}">Tareas Completadas</a></li>
+          <li><a href="/task/create">Crear Tarea</a></li>
+          <li><a href="/logout">logOut</a></li>
+          {% else %}
+          <li><a href="/signup">SignUp</a></li>
+          <li><a href="/signin">SignIn</a></li>
+          {% endif %}
+        </ul>
+      </nav>
+      {% endcomment %}
+      <ul class="nav-list">
+        <li>
+          <a href="/" class="active">Home</a>
+        </li>
+        {% if user.is_authenticated %}
+        <li>
+          <a href="{% url 'tasks' %}">Productos</a>
+          <!-- <ul class="sub-menu">
+                        <li><a href="#"><i class="fas fa-play"></i> Todos los Productos</a></li>
+                        <li><a href="#"><i class="fas fa-play"></i> Aceros de Perforación</a></li>
+                        <li><a href="#"><i class="fas fa-play"></i> Perforación Superficial</a></li>
+                        <li><a href="#"><i class="fas fa-play"></i> Perforación Interior</a></li>                            
+                        <li><a href="#"><i class="fas fa-play"></i> Trituración Movil</a></li>
+                        <li><a href="#"><i class="fas fa-play"></i> Repuestos</a></li>
+                    </ul> -->
+        </li>
+        <li>
+          <a href="{% url 'task_completed' %}">Equipos</a>
+        </li>
+        <li>
+          <a href="/task/create">Servicios</a>
+        </li>
+        <li>
+          <a href="/logout">LogOut</a>
+        </li>
+        {% else %}
+        <li>
+          <a href="/signup">SignUP</a>
+        </li>
+        <li>
+          <a href="/signin">SignIn</a>
+        </li>
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+</div>
